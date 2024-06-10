@@ -45,13 +45,22 @@ argocd account update-password --account $USERNAMEGUET --current-password $PASSW
 alias k=kubectl
 # test en vivo
 kubectl create ns testing
-argocd proj create testing -d https://kubernetes.default.svc,testing -s https://github.com/TheAutomationRules/argocd.git
+argocd proj create testing -d https://kubernetes.default.svc,testing -s https://github.com/Cristianguerrer/kubernetes.git
 argocd app create guestbook \
   --repo https://github.com/Cristianguerrer/kubernetes.git \
-  --revision main --path ./example-manifest/nginx-demo/kustomize/overlays/testing \
+  --revision main --path ./example-manifest/guestbook-demo \
   --dest-server https://kubernetes.default.svc \
   --dest-namespace testing \
   --project testing
+###
+argocd proj create system-admin -d https://kubernetes.default.svc,* -s '*'
+argocd app create helm-guestbook \
+  --repo https://github.com/Cristianguerrer/kubernetes.git \
+  --revision main --path ./example-manifest/helm-guestbook-demo \
+  --dest-server https://kubernetes.default.svc \
+  --dest-namespace testing \
+  --sync-policy automated \
+  --project system-admin
 ######
 # argocd app sync guestbook
 # helm install my-release oci://registry-1.docker.io/bitnamicharts/wordpress  # instalar wordpress
