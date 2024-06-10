@@ -1,0 +1,15 @@
+# Ejemplo desde el repo nube del chart
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+spec:
+  project: argocd-demo
+  source:
+    repoURL: oci://registry-1.docker.io/bitnamicharts
+    chart: wordpress
+    targetRevision: "22.0.0" 
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: argocd
