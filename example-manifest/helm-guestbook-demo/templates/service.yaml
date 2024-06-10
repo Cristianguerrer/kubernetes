@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: argocd-server-loadbalancer
+  name: argocd-loadbalancer-helm-g-demo
   labels:
     app: helm-guestbook
     release: helm-guestbook
