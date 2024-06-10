@@ -17,3 +17,21 @@ spec:
   selector:
     app: {{ template "helm-guestbook.name" . }}
     release: {{ .Release.Name }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: argocd-server-loadbalancer
+  labels:
+    app: helm-guestbook
+    release: helm-guestbook
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: helm-guestbook
+    release: helm-guestbook
