@@ -5,7 +5,7 @@ metadata:
   name: wordpress
   namespace: argocd
 spec:
-  project: argocd-demo
+  project: system-admin
   source:
     repoURL: oci://registry-1.docker.io/bitnamicharts
     chart: wordpress
