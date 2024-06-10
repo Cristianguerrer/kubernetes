@@ -15,7 +15,7 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: ghcr.io/theautomationrules/nginx-demo-arm:0.1.0
+        - image: nginxdemos/hello
           name: nginx-demo-arm
           ports:
             - containerPort: 80
