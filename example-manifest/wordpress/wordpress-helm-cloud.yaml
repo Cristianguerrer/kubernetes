@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: oci://registry-1.docker.io/bitnamicharts
     chart: wordpress
-    targetRevision: "22.0.0" 
+    targetRevision: "22.4.8" 
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
