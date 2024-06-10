@@ -19,7 +19,7 @@ ArgoCD es una herramienta de Continuous Delivery (CD) perfecta para Kubernetes (
 - **Sincronización Automática o Manual**: Sincronización automática o manual de las aplicaciones a su estado deseado.
 - **Interfaz Web**: Interfaz web que proporciona una vista en tiempo real de la actividad de las aplicaciones.
 - **CLI para Automatización**: Interfaz de línea de comandos (CLI) para automatización e integración con CI.
-- **Integración con Webhooks**: Integración con GitHub, BitBucket, GitLab para disparar despliegues automáticos.
+- **Integración con Webhooks**: Integración con Azure Repos, GitHub, BitBucket, GitLab para disparar despliegues automáticos.
 - **Tokens de Acceso**: Uso de tokens de acceso para automatización.
 - **Hooks de Despliegue**: Soporte para PreSync, Sync y PostSync hooks para despliegues complejos (ej. actualizaciones blue/green y canary).
 - **Registro de Auditoría**: Rastreabilidad de eventos de aplicación y llamadas a la API.

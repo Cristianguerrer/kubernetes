@@ -1,0 +1,26 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx-demo-arm
+# spec:
+#   ports:
+#     - port: 80
+#       targetPort: 80
+#   selector:
+#     app: nginx-demo-arm
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-demo-arm
+  labels:
+    app: nginx-demo-arm
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx-demo-arm
