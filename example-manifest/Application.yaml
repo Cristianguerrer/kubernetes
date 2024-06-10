@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: <UrlRepo>
     targetRevision: main
-    path: official/examples/helm-guestbook
+    path: <Path>
     helm:
       valueFiles:
         - values-test.yaml
