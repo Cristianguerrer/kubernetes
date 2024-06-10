@@ -11,7 +11,7 @@ spec:
   project: argocd-demo
 
   source:
-    repoURL: https://github.com/The-Automation-Rules/argocd-demo.git
+    repoURL: <UrlRepo>
     targetRevision: main
     path: official/examples/helm-guestbook
     helm:
