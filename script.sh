@@ -47,8 +47,8 @@ alias k=kubectl
 kubectl create ns testing
 argocd proj create testing -d https://kubernetes.default.svc,testing -s https://github.com/TheAutomationRules/argocd.git
 argocd app create guestbook \
-  --repo https://github.com/TheAutomationRules/argocd.git \
-  --revision main --path ./official/examples/guestbook \
+  --repo https://github.com/Cristianguerrer/kubernetes.git \
+  --revision main --path ./example-manifest/nginx-demo/kustomize/overlays/testing \
   --dest-server https://kubernetes.default.svc \
   --dest-namespace testing \
   --project testing
