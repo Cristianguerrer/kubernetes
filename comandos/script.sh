@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# https://www.canva.com/design/DAGHxonzZBE/7B-Idiq-DXSFgGHvR7j0uA/view?utm_content=DAGHxonzZBE&utm_campaign=designshare&utm_medium=link&utm_source=editor
 # terraform fmt cluster-terraform.tf
 # terraform init cluster-terraform.tf
 # terraform validate cluster-terraform.tf
@@ -62,6 +63,15 @@ argocd app create helm-guestbook \
   --sync-policy automated \
   --project system-admin
 ######
+###
+argocd proj create system-admin -d https://kubernetes.default.svc,* -s '*'
+argocd app create cristian-wordpress \
+  --repo https://github.com/Cristianguerrer/kubernetes.git \
+  --revision main --path ./example-manifest/wordpress-demo \
+  --dest-server https://kubernetes.default.svc \
+  --dest-namespace argocd \
+  --project system-admin
+######
 # argocd app sync guestbook
 # helm install my-release oci://registry-1.docker.io/bitnamicharts/wordpress  # instalar wordpress
-
+# #callumhoughton22/doom-in-docker:0.1
