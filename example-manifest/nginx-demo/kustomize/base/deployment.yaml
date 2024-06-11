@@ -15,7 +15,7 @@ spec:
         app: nginx-demo-arm
     spec:
       containers:
-        - image: nginxdemos/hello
+        - image: callumhoughton22/doom-in-docker:0.1 #nginxdemos/hello
           name: nginx-demo-arm
           ports:
             - containerPort: 80
