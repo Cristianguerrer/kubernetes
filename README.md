@@ -1,6 +1,7 @@
 # ArgoCD - Kubernetes - GitOps 🚀
+![ArgoCD GitOps Workflow](https://example.com/path/to/image.png)
 
-[![Documentación Oficial](https://img.shields.io/badge/Documentación-ArgoCD-blue.svg)](https://argo-cd.readthedocs.io/en/stable/)
+[![Documentación Oficial](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.stackademic.com%2Fa-complete-overview-of-argocd-with-a-practical-example-0cf7edb00cb1&psig=AOvVaw2_IVeyRNQHTTxTAkhGIerB&ust=1718158608068000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCxh9-90oYDFQAAAAAdAAAAABAJ)](https://argo-cd.readthedocs.io/en/stable/)
 
 ## Descripción 📖
 
