@@ -7,9 +7,9 @@ metadata:
 spec:
   project: system-admin
   source:
-    repoURL: registry-1.docker.io/bitnamicharts
-    chart: wordpress
-    targetRevision: "22.4.8" 
+    repoURL: registry-1.docker.io
+    chart: bitnamicharts/wordpress
+    targetRevision: 22.4.8
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
