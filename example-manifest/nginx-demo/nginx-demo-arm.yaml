@@ -17,7 +17,7 @@ spec:
     path: example-manifest/nginx-demo/kustomize/overlays/testing
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-demo
+    namespace: argocd
   syncPolicy:
     automated:
       selfHeal: true
