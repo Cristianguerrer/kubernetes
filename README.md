@@ -1,6 +1,6 @@
 # ArgoCD - Kubernetes - GitOps 🚀
 
-![ArgoCD GitOps Workflow](https://miro.medium.com/v2/resize:fit:1400/1*4nMq5qwUgtZZ3dyYqFQC0Q.png)
+![image](https://github.com/user-attachments/assets/124ca8e7-c6dd-4507-980d-c194b266b30f)
 
 ## Descripción 📖
 
